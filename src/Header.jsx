@@ -3,7 +3,7 @@ import {BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsSearch, BsJustify}
 from 'react-icons/bs'
 function Header() {
   return (
-    <h1 className='header'>
+    <header className='header'>
       
       <div className='header-left'>
         <BsSearch className='icon' />
@@ -13,7 +13,7 @@ function Header() {
         <BsFillBellFill className='icon' />
         
       </div>
-    </h1>
+    </header>
   )
 }
 

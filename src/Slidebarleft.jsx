@@ -1,13 +1,14 @@
 import React from 'react'
-import{Bscart3} from 'react-icons/bs'
+import{Bscart3 , BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, 
+  BsListCheck, BsMenuButtonWideFill, BsFillGearFill} from 'react-icons/bs'
 
 
-function Slidebarleft() {
+function Slidebarleft({openSidebarToggle, OpenSidebar}) {
   return (
-    <aside>
+    <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive": ""}>
       <div className='sidebar-title'>
         <div className='sidebar-brand'>
-          <Bscart className='icon'/> SHOP
+          <Bscart className='icon_header'/> SHOP
         </div>
         <span className='icon close_icon'></span>
       </div>
@@ -16,20 +17,24 @@ function Slidebarleft() {
           <a href=''>
             <Bscart3 className='icon'/>Notification
           </a>
+          </li>
 
-          <a href=''>
-            <Bscart3 className='icon'/>grad
+          <li className='sidbar-list-item'>
+            <a href=''>
+              <Bscart3 className='icon'/>grad
             
-          </a>
-
-          <a href=''>
-            <Bscart3 className='icon'/>Setting
+            </a>
+          </li>
+          <li className='sidbar-list-item'>
+            <a href=''>
+              <Bscart3 className='icon'/>Setting
             
-          </a>
-
-          <a href=''>
-            <Bscart3 className='icon'/>file
-          </a>
+            </a>
+          </li>
+          <li className='sidbar-list-item'>
+            <a href=''>
+              <Bscart3 className='icon'/>file
+            </a>
 
         </li>
       </ul>

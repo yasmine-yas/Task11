@@ -10,12 +10,11 @@ function App() {
 
   return (
   <div className='grid-container'> 
-  
+  <Header/>
   <Slidebarleft/>
   <Header/>
   <Home/>
-  <Header/>
-  <Slidebarright/>
+
   
 
   </div>
