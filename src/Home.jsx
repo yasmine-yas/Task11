@@ -33,7 +33,7 @@ function Home() {
         {chunkedData.map((row, index) => (
           <div key={index} className="table-row" style={{ backgroundColor: index % 2 === 0 ? '#424242' : '#424242', padding: '5px 10px', display: 'flex', marginBottom: '10px' }}>
             {row.map((cell, idx) => (
-              <div key={idx} className="table-cell" style={{ margin: '5px 120px', fontSize: '16px', color: idx === 3 ? (cell === 'Low Risk' ? 'red' : 'green') : 'white' }}>{cell}</div>
+              <div key={idx} className="table-cell" style={{ margin: '5px 120px', fontSize: '16px', color: idx === 3 ? (cell === 'Low Risk' ? '#D94111' : '#118F4B') : 'white' }}>{cell}</div>
             ))}
           </div>
         ))}

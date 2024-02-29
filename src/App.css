@@ -11,6 +11,7 @@ body {
   
   cursor: pointer;
   width: 80px;
+  size: 60px;
 
 }
 
@@ -23,6 +24,21 @@ ul{
   font-weight: 600;
   color: azure;
   
+}
+
+uul{
+  flex: 1;
+  list-style: none;
+  font-size: 20px;
+  text-align:center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: azure;
+  
+}
+uuul{
+  font-size: 10px;
+  text-align:left;
 }
 
 .icon {
@@ -49,11 +65,12 @@ ul{
 
 .grid-container {
   display: grid;
-  grid-template-columns: 260px 1fr 1fr 1fr;
+  
+  grid-template-columns: 60px 1fr 1fr 300px; 
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas:
-    'sidebar header header header'
-    'sidebar main main main';
+    'sidebar header header sidebarright'
+    'sidebar main main sidebarright';
   height: 100vh;
 }
 

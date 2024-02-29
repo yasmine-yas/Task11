@@ -3,8 +3,11 @@ import React from 'react'
 function Slidebarright() {
   return (
     <div className='main-title'>
-      <h3>DASHBOARD</h3>
+      <uul>
+        <li>Filters</li>
+      </uul>
     </div>
+    
   )
 }
 
