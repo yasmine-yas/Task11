@@ -1,24 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import Slidebarleft from './Slidebarleft'
-import Slidebarright from './Slidebarright'
-import Home from './Home'
-import Header from './Header'
+import React from 'react';
+import './App.css';
+import Slidebarleft from './Slidebarleft';
+import Slidebarright from './Slidebarright';
+import Home from './Home';
+import Header from './Header';
 
 function App() {
-  
-
   return (
-  <div className='grid-container'> 
-  <Header/>
-  <Slidebarleft/>
-  <Header/>
-  <Home/>
-
-  
-
-  </div>
-  )
+    <div className='grid-container'> 
+      <Header/>
+      <Slidebarleft/>
+      <Home/>
+      <Slidebarright/>
+    </div>
+  );
 }
 
-export default App
+export default App;
