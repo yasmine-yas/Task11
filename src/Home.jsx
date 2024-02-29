@@ -3,8 +3,8 @@ import React from 'react';
 function Home() {
   // Sample data
   const data = [
-    'AMZN        ', '200    ', '-0.25%    ', 'Low Risk',
-    'TSLA    ', '200    ', '-0.25%    ', 'High Risk',
+    'AMZN', '200', '-0.25%', 'Low Risk',
+    'TSLA', '200', '-0.25%', 'High Risk',
     'ABQQ', '200', '-0.25%', 'High Risk',
     'MSFT', '200', '-0.25%', 'Low Risk',
     'PYPL', '200', '-0.25%', 'Low Risk',
@@ -27,15 +27,13 @@ function Home() {
 
   return (
     <main className='main-container'>
-      <div className='main-title'>
-        
-      </div>
+      <div className='main-title'></div>
 
       <div className='main-table'>
         {chunkedData.map((row, index) => (
-          <div key={index} className="table-row" style={{ backgroundColor: index % 2 === 0 ? '#424242' : '#424242', padding: '5px 10px', display: 'flex', marginBottom: index !== chunkedData.length - 1 ? '10px' : '0' }}>
+          <div key={index} className="table-row" style={{ backgroundColor: index % 2 === 0 ? '#424242' : '#424242', padding: '5px 10px', display: 'flex', marginBottom: '10px' }}>
             {row.map((cell, idx) => (
-              <div key={idx} className="table-cell" style={{ margin: '5px 120px', fontSize: '16px' }}>{cell}</div>
+              <div key={idx} className="table-cell" style={{ margin: '5px 120px', fontSize: '16px', color: idx === 3 ? (cell === 'Low Risk' ? 'red' : 'green') : 'white' }}>{cell}</div>
             ))}
           </div>
         ))}
