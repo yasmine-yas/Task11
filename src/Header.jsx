@@ -1,10 +1,19 @@
 import React from 'react'
-
+import {BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsSearch, BsJustify}
+from 'react-icons/bs'
 function Header() {
   return (
-    <div>
+    <h1 className='header'>
       
-    </div>
+      <div className='header-left'>
+        <BsSearch className='icon' />
+        
+      </div>
+      <div className='header-right'>
+        <BsFillBellFill className='icon' />
+        
+      </div>
+    </h1>
   )
 }
 
