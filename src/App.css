@@ -25,6 +25,47 @@ ul{
   color: azure;
   
 }
+.filter-item {
+  flex: 1;
+  list-style: none;
+  font-size: 20px;
+  text-align:center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: azure;
+
+}
+
+.sidebar-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100%;
+  background-color: #121111;
+  overflow-y: auto;
+}
+
+/* Add other styles for your sidebar items */
+.pair-item {
+  color: white;
+  margin-left: 2px;
+  padding: 10px 0;
+  font-size: 8px;
+}
+
+.blue-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add more styles as needed */
+
+
 
 uul{
   flex: 1;
