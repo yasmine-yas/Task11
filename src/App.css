@@ -46,10 +46,22 @@ ul{
   overflow-y: auto;
 }
 
-/* Add other styles for your sidebar items */
+.grey-row {
+  background-color: #424242;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.black-row {
+  background-color: black;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
 .pair-item {
   color: white;
-  margin-left: 2px;
+  margin-left: 20px;
   padding: 10px 0;
   font-size: 8px;
 }
@@ -63,7 +75,7 @@ ul{
   cursor: pointer;
 }
 
-/* Add more styles as needed */
+
 
 
 

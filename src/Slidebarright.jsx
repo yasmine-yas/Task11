@@ -6,6 +6,11 @@ function Slidebarright() {
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
         <p>Filters</p>
       </div>
+      <div className="grey-row">Stock</div>
+      <div className="grey-row">Search Bar</div>
+      <div className="black-row"></div>
+      <div className="grey-row">Industry</div>
+      
       <div style={{ marginBottom: '20px' }}></div>
       <ul>
         <li className="pair-item">Health Care</li>
